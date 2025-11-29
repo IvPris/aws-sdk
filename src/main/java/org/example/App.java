@@ -9,7 +9,11 @@ public class App {
         logger.info("Application starts");
 
         Handler handler = new Handler();
-        handler.sendRequest();
+        handler.setup();
+
+        handler.latencyTest();
+
+        handler.tearDown();
 
         logger.info("Application ends");
     }
